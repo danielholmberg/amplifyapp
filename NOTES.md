@@ -16,7 +16,12 @@ In this module you will create a React application and deploy it to the cloud us
 
 ### 2. Initialize a GitHub repository
 ```git init```
-```git remote add origin git@github.com:username/reponame.git```
+If you have previously configured multiple git hosts, be sure to use the correct one. In my situation the correct Host with an SSH already added to the GitHub profile is:
+  Host danielholmberg.dev
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_danielholmberg_dev
+```git remote add origin git@danielholmberg.dev:username/reponame.git```
 ```git add .```
 ```git commit -m “initial commit”```
 ```git push origin master```
